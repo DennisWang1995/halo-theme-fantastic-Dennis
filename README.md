@@ -7,7 +7,6 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 
 此版本相关主题：
 - https://github.com/Bursteretion/halo-theme-fantastic
-- https://github.com/imkundev/halo-theme-fantastic
 
 ---
 
@@ -32,33 +31,22 @@ Fantastic主题修改版，为方便维护，重新发布此版本。<br>
 > 该主题的友链页面评论问题已解决。使用参考 
 [Halo自定义页面的使用方法](https://blog.xinac.cn/archives/halo-usage-200409)
 <br>
-> 效果预览：https://blog.xinac.cn/s/links
-
+> 效果预览：https://www.everglower.com/
 <br>
 
 
 ---
 
 ## 预览网址
-[https://blog.xinac.cn/](https://blog.xinac.cn/) 
+[https://www.everglower.com/](https://www.everglower.com/) 
 
 ---
 ---
----
-
-## 预览截图
-
-![](https://cdn.xinac.cn/blog/screenshot_1586231110425.png)
-
-![](https://cdn.xinac.cn/blog/screenshot-2_1586231110444.png)
-
-![](https://cdn.xinac.cn/blog/screenshot-3_1586231110351.png)
-
-![](https://cdn.xinac.cn/blog/screenshot-4_1586231115821.png)
 
 
 ## 使用方法
 
 1. 克隆或者下载
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用
-3. 用Halo自还的程序拉取 `https://github.com/jinqilin721/halo-theme-xinac-fantastic.git`
+3. 用Halo自还的程序拉取 ` https://github.com/DennisWang1995/halo-theme-fantastic-Dennis.git
+`
