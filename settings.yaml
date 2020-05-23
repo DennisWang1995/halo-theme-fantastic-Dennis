@@ -1,0 +1,524 @@
+sidebar:
+  label: 个性化
+  items:
+    auto_theme:
+      name: auto_theme
+      label: 主题模式
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    site_gray:
+      name: site_gray
+      label: ※全站灰色背景※
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    profile_follow_url:
+      name: profile_follow_url
+      label: 【关注我】按钮地址
+      type: text
+      placeholder: '默认为博客地址，不填写则不显示'
+    sidebar_profile:
+      name: sidebar_profile
+      label: 侧边栏个人资料
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_categories:
+      name: sidebar_categories
+      label: 侧边栏分类
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_tagcloud:
+      name: sidebar_tagcloud
+      label: 侧边栏标签云
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_links:
+      name: sidebar_links
+      label: 侧边栏链接
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_recentpost:
+      name: sidebar_recentpost
+      label: 侧边栏最近文章
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    nav_enable:
+      name: nav_enable
+      label: 是否显示分类导航
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    profile_enable:
+      name: profile_enable
+      label: 是否显示个性签名
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 显示
+        - value: false
+          label: 隐藏
+    tree_menu_enable:
+      name: profile_enable
+      label: 菜单样式
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 级联菜单
+        - value: false
+          label: 列表
+    sidebar_recentcomment:
+      name: sidebar_recentcomment
+      label: 侧边栏最近评论
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_tags:
+      name: sidebar_tags
+      label: 侧边栏标签
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    theme_static_base:
+      name: theme_static_base
+      label: 主题静态文件URL前缀（建议填写：//s.xinac.net）
+      type: text
+      placeholder: '主题CDN URL，不知道无需填写'
+      default: ''
+
+post:
+  label: 文章设置
+  items:
+    share_type:
+      name: share_type
+      label: 文章分享组件
+      type: select
+      default: 'sharejs'
+      options:
+        - value: ''
+          label: '无'
+        - value: addtoany
+          label: addtoany
+        - value: sharejs
+          label: sharejs
+    donate_alipay:
+      name: donate_alipay
+      label: 支付宝捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    donate_wechat:
+      name: donate_wechat
+      label: 微信捐赠二维码
+      type: attachment
+      placeholder: '二维码地址'
+    mathjax_enable:
+      name: mathjax_enable
+      label: MathJax
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    code_pretty:
+      name: code_pretty
+      label: 文章代码高亮主题
+      type: select
+      default: Default
+      options:
+        - value: Default
+          label: Default
+        - value: Coy
+          label: Coy
+        - value: Dark
+          label: Dark
+        - value: Okaidia
+          label: Okaidia
+        - value: Solarized Light
+          label: Solarized Light
+        - value: Tomorrow Night
+          label: Tomorrow Night
+        - value: Twilight
+          label: Twilight
+#    code_pretty:
+#      name: code_pretty
+#      label: 文章代码高亮主题
+#      type: select
+#      default: light
+#      options:
+#        - value: Dark
+#          label: dark
+#        - value: light
+#          label: light
+    comment_enable:
+      name: comment_enable
+      label: 显示评论
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    post_thumbnail_enable:
+      name: post_thumbnail_enable
+      label: 显示文章封面图
+      type: select
+      default: 'true'
+      options:
+        - value: 'true'
+          label: '开启，无封面图时使用随机图片'
+        - value: 'random_pic'
+          label: '开启，全部使用随机图片'
+        - value: 'false'
+          label: '关闭'
+social:
+  label: 博客信息
+  items:
+    social_github:
+      name: social_github
+      label: Github
+      type: text
+      placeholder: 'Github 用户名'
+    social_qq:
+      name: social_qq
+      label: QQ
+      type: text
+      placeholder: 'QQ 号'
+    social_weibo:
+      name: social_weibo
+      label: 微博
+      type: text
+      placeholder: '微博用户名'
+    social_twitter:
+      name: social_twitter
+      label: Twitter
+      type: text
+      placeholder: 'Twitter 用户名'
+    social_facebook:
+      name: social_facebook
+      label: Facebook
+      type: text
+      placeholder: 'Facebook 用户名'
+    social_email:
+      name: social_email
+      label: Email
+      type: text
+      placeholder: '邮箱地址'
+    social_telegram:
+      name: social_telegram
+      label: Telegram
+      type: text
+      placeholder: 'Telegram 用户名'
+    social_beian:
+      name: social_beian
+      label: 备案号
+      type: text
+      placeholder: '备案号'
+    social_free:
+      name: social_free
+      label: 底部自定义
+      type: textarea
+      default: '，Powered by <a href="https://github.com/halo-dev/halo" target="_blank">Halo</a> & <a href="https://github.com/jinqilin721/halo-theme-fantastic" target="_blank">xinac-fantastic</a>'
+
+plugins:
+  label: 插件
+  items:
+    music:
+      name: music
+      label: 音乐播放器
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    music_id:
+      name: music_id
+      label: 外链音乐Id (如果已开启音乐播放器, 此项必填)
+      type: text
+      default: '379014204'
+      placeholder: '外链音乐Id'
+    kanbanniang:
+      name: kanbanniang
+      label: 看板娘
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    busuanzi:
+      name: busuanzi
+      label: 不蒜子计数
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    bokejishi:
+      name: bokejishi
+      label: 博客计时
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    time_start:
+      name: time_start
+      label: 开始时间 (如果已开启博客计时, 此项必填)
+      type: text
+      default: '2020-01-01 00:00:00'
+      placeholder: '形如2019-08-10 00:00:00格式'
+    caidai:
+      name: caidai
+      label: 背景彩带
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    xiantiao:
+      name: xiantiao
+      label: 背景线条
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    dianji:
+      name: dianji
+      label: 鼠标点击特效
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+custom_links:
+  label: 自定义链接
+  items:
+    links_top:
+      name: links_top
+      label: 顶部链接
+      type: textarea
+      default: ''
+    links_footer:
+      name: links_footer
+      label: 底部链接
+      type: textarea
+      default: '<p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        <i class="fab fa-creative-commons title is-4"></i>
+                    </a>
+                </p>
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        <i class="fab fa-creative-commons-by title is-4"></i>
+                    </a>
+                </p>'
+
+custom_cdn:
+  label: CDN优选
+  items:
+    cdn_google_fonts:
+      name: cdn_google_fonts
+      label: Google Fonts
+      type: text
+      default: 'https://fonts.googleapis.com'
+      placeholder: 'CDN网址'
+    cdn_jquery_js:
+      name: cdn_jquery_js
+      label: jQuery
+      type: text
+      default: '//s.xinac.net/static/jquery/v3.5.0/jquery.min.js'
+      placeholder: 'CDN网址'
+    cdn_fontawesome_css:
+      name: cdn_fontawesome_css
+      label: fontawesome-css(Font Awesome图标字体库)
+      type: text
+      default: '//s.xinac.net/static/font-awesome/v5.12.1/css/all.min.css'
+      placeholder: 'CDN网址'
+    cdn_busuanzi_js:
+      name: cdn_busuanzi_js
+      label: busuanzi(不蒜子网页计数器)
+      type: text
+      default: '//s.xinac.net/static/busuanzi/v2.3.0/bsz.pure.mini.js'
+      placeholder: 'CDN网址'
+    cdn_canvas_nest_js:
+      name: cdn_canvas_nest_js
+      label: canvas-nest(线条)
+      type: text
+      default: '//s.xinac.net/static/canvas-nest.js/v1.0.1/canvas-nest.min.js'
+      placeholder: 'CDN网址'
+    cdn_bulma_css:
+      name: cdn_bulma_css
+      label: bulma-css(Bulma框架)
+      type: text
+      default: '//s.xinac.net/static/bulma/v0.7.5/css/bulma.min.css'
+      placeholder: 'CDN网址'
+    cdn_pace_js:
+      name: cdn_pace_js
+      label: pace-js(浏览器加载效果插件)
+      type: text
+      default: '//s.xinac.net/static/pace/v1.0.2/pace.min.js'
+      placeholder: 'CDN网址'
+    cdn_vue_js:
+      name: cdn_vue_js
+      label: vue-js(VUE框架，评论模块用)
+      type: text
+      default: '//s.xinac.net/static/vue/v2.6.11/vue.min.js'
+      placeholder: 'CDN网址'
+    cdn_swiper_js:
+      name: cdn_swiper_js
+      label: Swiper-js(触摸滑动插件)
+      type: text
+      default: '//s.xinac.net/static/Swiper/v4.3.5/js/swiper.min.js'
+      placeholder: 'CDN网址'
+    cdn_swiper_css:
+      name: cdn_swiper_css
+      label: Swiper-css(触摸滑动插件)
+      type: text
+      default: '//s.xinac.net/static/Swiper/v4.3.5/css/swiper.min.css'
+      placeholder: 'CDN网址'
+    cdn_mathjax_js:
+      name: cdn_mathjax_js
+      label: MathJax(数学公式支持插件)
+      type: text
+      default: '//s.xinac.net/static/mathjax/v2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML'
+      placeholder: 'CDN网址'
+    cdn_aplayer_js:
+      name: cdn_aplayer_js
+      label: APlayer-js(音乐播放器)
+      type: text
+      default: '//s.xinac.net/static/aplayer/v1.10.1/APlayer.min.js'
+      placeholder: 'CDN网址'
+    cdn_aplayer_css:
+      name: cdn_aplayer_css
+      label: APlayer-css(音乐播放器)
+      type: text
+      default: '//s.xinac.net/static/aplayer/v1.10.1/APlayer.min.css'
+      placeholder: 'CDN网址'
+    cdn_meting_js:
+      name: cdn_meting_js
+      label: Meting-js(音乐播放器)
+      type: text
+      default: '//s.xinac.net/static/meting/v1.2.0/Meting.min.js'
+      placeholder: 'CDN网址'
+    cdn_justifiedGallery_js:
+      name: cdn_justifiedGallery_js
+      label: Justified Gallery-js(相册展示插件)
+      type: text
+      default: '//s.xinac.net/static/justifiedGallery/v3.7.0/js/jquery.justifiedGallery.min.js'
+      placeholder: 'CDN网址'
+    cdn_justifiedGallery_css:
+      name: cdn_justifiedGallery_css
+      label: Justified Gallery-css(相册展示插件)
+      type: text
+      default: '//s.xinac.net/static/justifiedGallery/v3.7.0/css/justifiedGallery.min.css'
+      placeholder: 'CDN网址'
+    cdn_lightgallery_js:
+      name: cdn_lightgallery_js
+      label: lightgallery-js(灯箱插件)
+      type: text
+      default: '//s.xinac.net/static/lightgallery/v1.6.9/js/lightgallery.min.js'
+      placeholder: 'CDN网址'
+    cdn_lightgallery_css:
+      name: cdn_lightgallery_css
+      label: lightgallery-css(灯箱插件)
+      type: text
+      default: '//s.xinac.net/static/lightgallery/v1.6.9/css/lightgallery.min.css'
+      placeholder: 'CDN网址'
+    cdn_share_js:
+      name: cdn_share_js
+      label: social-share-js(文章分享)
+      type: text
+      default: '//s.xinac.net/static/social-share.js/v1.0.16/js/social-share.min.js'
+      placeholder: 'CDN网址'
+    cdn_share_css:
+      name: cdn_share_css
+      label: social-share-css(文章分享)
+      type: text
+      default: '//s.xinac.net/static/social-share.js/v1.0.16/css/share.min.css'
+      placeholder: 'CDN网址'
